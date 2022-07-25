@@ -1,7 +1,7 @@
 .container {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 2fr 1fr 1fr 1fr;
     gap: 0px 0px; 
     grid-template-areas: 
       "Header1 Header1 Header2 Header2"
@@ -10,12 +10,33 @@
       "boy5 boy6 hand hand"; 
   }
   .Header1 { 
-    background: url(photos/genz.png);
     grid-area: Header1;
+    background: url(/photos/genz.png);
+    background-position: center;
+    background-size: cover;
+    height: 7em;
+    padding: 2em;
+    margin: 1em;
  }
 
-  .Header2 { grid-area: Header2; }
-  .boy1 { grid-area: boy1; }
+  .Header2 { 
+    grid-area: Header2;
+    background: url(/photos/Haknyeon.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 7em;
+    padding: 2em;
+    margin: 1em;
+  }
+
+  .boy1 { 
+    grid-area: boy1; 
+    background: url(/photos/chanhee3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 7em;
+    margin-left: 1em; 
+  }
   .boy2 { grid-area: boy2; }
   .tbz { grid-area: tbz; }
   .boy3 { grid-area: boy3; }
