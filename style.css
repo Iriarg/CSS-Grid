@@ -1,0 +1,26 @@
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "Header1 Header1 Header2 Header2"
+      "boy1 boy2 tbz boy3"
+      "tbz2 tbz2 tbz boy4"
+      "boy5 boy6 hand hand"; 
+  }
+  .Header1 { 
+    background: url(photos/genz.png);
+    grid-area: Header1;
+ }
+
+  .Header2 { grid-area: Header2; }
+  .boy1 { grid-area: boy1; }
+  .boy2 { grid-area: boy2; }
+  .tbz { grid-area: tbz; }
+  .boy3 { grid-area: boy3; }
+  .tbz2 { grid-area: tbz2; }
+  .boy4 { grid-area: boy4; }
+  .boy5 { grid-area: boy5; }
+  .boy6 { grid-area: boy6; }
+  .hand { grid-area: hand; }
